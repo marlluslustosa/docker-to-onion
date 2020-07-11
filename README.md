@@ -28,6 +28,7 @@ sudo docker run -it --rm -e LISTEN_PORT=80 \
 -e REDIRECT=jekyll:4000 --network=onionet \
 marlluslustosa/docker-to-onion
 ```
+it will show an onion address (in green) after the command
 
 ![Example](./animation-quickstart.svg)
 
