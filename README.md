@@ -29,7 +29,7 @@ sudo docker run -it --rm -e LISTEN_PORT=80 \
 marlluslustosa/docker-to-onion
 ```
 
-![Example](./docs/tuto-openssl.svg)
+![Example](./animation-quickstart.svg)
 
 # Variables
 
