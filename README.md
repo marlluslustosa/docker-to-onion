@@ -5,7 +5,7 @@ Pulls](https://img.shields.io/docker/pulls/marlluslustosa/docker-to-onion.svg?st
 
 ![License](https://img.shields.io/badge/License-GPL-blue.svg?style=plastic)
 
-Expose local docker as onion service
+Expose local docker as onion service. N-grok alternative with Tor (no centralized servers for spying).
 
 # 🚀 Quickstart
 
@@ -18,14 +18,14 @@ sudo docker network create --driver=bridge onionet
 Now connect the network to the service container you want to exhibit.
 
 ```bash
-sudo docker network connect onionet wordpress
+sudo docker network connect onionet jekyll
 ```
 
-Let's go up the onion service (example: wordpress container name running on port 80)
+Let's go up the onion service (example: jekyll container running on local port 4000)
 
 ```bash
 sudo docker run -it --rm -e LISTEN_PORT=80 \
--e REDIRECT=wordpress:80 --network=onionet \
+-e REDIRECT=jekyll:4000 --network=onionet \
 marlluslustosa/docker-to-onion
 ```
 
