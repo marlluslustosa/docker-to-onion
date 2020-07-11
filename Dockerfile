@@ -38,7 +38,8 @@ RUN useradd --system --uid 666 -M --shell /usr/sbin/nologin tor
 COPY main.sh /
 
 RUN mkdir /web && \
-    chown -R tor /web /etc/tor
+    chown -R tor /web /etc/tor && \
+    chmod 700 /web
 
 VOLUME /web
 
