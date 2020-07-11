@@ -1,7 +1,7 @@
-# TOR in a Container
+# Docker to onion service
 
 [![Docker
-Pulls](https://img.shields.io/docker/pulls/strm/tor.svg?style=plastic)](https://hub.docker.com/r/marlluslustosa/docker-to-onion)
+Pulls](https://img.shields.io/docker/pulls/marlluslustosa/docker-to-onion.svg?style=plastic)](https://hub.docker.com/r/marlluslustosa/docker-to-onion)
 
 ![License](https://img.shields.io/badge/License-GPL-blue.svg?style=plastic)
 
@@ -21,7 +21,7 @@ Now connect the network to the service container you want to exhibit.
 sudo docker network connect onionet wordpress
 ```
 
-Let's go up the onion service
+Let's go up the onion service (example: wordpress container name running on port 80)
 
 ```bash
 sudo docker run -it --rm -e LISTEN_PORT=80 -e REDIRECT=wordpress:80 --network=onionet marlluslustosa/docker-to-onion
