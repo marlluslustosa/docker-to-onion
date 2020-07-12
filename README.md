@@ -48,6 +48,10 @@ sudo docker run -it --rm -e ONION_PART_NAME=^test -e LISTEN_PORT=80 -e REDIRECT=
 
 This pattern will generate an address starting with `test`, by `testm4lgosy5lgsd.onion`. Click [here](https://github.com/marlluslustosa/docker-to-onion/blob/master/shallot/README.asciidoc) for details on performance in the generation of onion addresses.
 
+### Future works:
+
+- [ ] Tor Onion v3 Vanity Address support [oniongen-go?](https://github.com/rdkr/oniongen-go).
+
 ## :nail_care: Inspiration
 
 - [`opsxcq/docker-tor`](https://github.com/opsxcq/docker-tor).
