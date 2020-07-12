@@ -46,4 +46,3 @@ VOLUME /web
 USER tor
 
 ENTRYPOINT ["/main.sh"]
-CMD ["default"]

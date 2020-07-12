@@ -43,5 +43,4 @@ then
     echo "SOCKSPort 0.0.0.0:${PROXY_PORT}" >> /etc/tor/torrc
 fi
 
-tor -f /etc/tor/torrc
-
+tor -f  /etc/tor/torrc --quiet
