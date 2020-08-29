@@ -1,18 +1,18 @@
-name: Docker Image CI
-
+name: "CI"
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
   pull_request:
-    branches: [ master ]
+
+env:
+  TEST_IMAGE_NAME: hadolint-action:${{github.sha}}
 
 jobs:
-
-  build:
-
+  lint:
     runs-on: ubuntu-latest
-
+    container: pipelinecomponents/hadolint:latest
     steps:
-      - uses: brpaz/hadolint-action@master
-      - name: Hadolint Action
+      - uses: actions/checkout@v1
+      - name: Run hadolint
         run: hadolint Dockerfile
