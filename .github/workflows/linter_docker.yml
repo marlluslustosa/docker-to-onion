@@ -11,5 +11,5 @@ jobs:
       with:
         target: Dockerfile
       env:
-        GITHUB_TOKEN: ${{ secrets.fa1e56fdad9f70b6196a582150509ca9024077f6 }}
+        GITHUB_TOKEN: ${{ secrets.079bf2ac7af782a711319bfba41207108e3120e4 }}
 
