@@ -1,2 +1,19 @@
-- name: Hadolint Action
-  uses: brpaz/hadolint-action@v1.1.0
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    uses: brpaz/hadolint-action@master
+      - name: Hadolint Action
+
+    
