@@ -1,0 +1,2 @@
+- name: Hadolint Action
+  uses: brpaz/hadolint-action@v1.1.0
