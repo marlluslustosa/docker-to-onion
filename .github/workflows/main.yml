@@ -18,8 +18,8 @@ jobs:
         env:
           USERNAME: ${{ secrets.GHTOKEN }}
           PASSWORD: ${{ secrets.GHUSERNAME }}
-          REGISTRY: "docker.pkg.github.com"
+          REGISTRY: "docker.pkg.github.com/marlluslustosa"
           DOCKERFILE: "Dockerfile"
-          IMAGE_NAME: "IMAGE_NAME"
+          IMAGE_NAME: "docker-onion-flow"
           TAG_NAME: "v0.0.1"
           LATEST: "true"
