@@ -1,5 +1,5 @@
 # Based on Debian-slim (minimal)
-1FROM debian:buster-slim
+FROM debian:buster-slim
 
 # Maintainer
 LABEL maintainer "Marllus Lustosa <marlluslustosa@riseup.net>"
